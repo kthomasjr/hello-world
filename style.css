@@ -11,22 +11,26 @@ color: red;
 
 .container {
     display: grid;
-    grid-area: ;
+    grid-template: repeat(3, 1fr) / 100px 100px 100px;
+    gap: 10px;
+    border: 1px;
+    width: 1000px;
+    justify-content: center;
 }
 
 .a {
-
+grid-area: 1 / 1 / span 1 / span 2;
 }
 
 .b {
-
+grid-area: 1 / 2 / span 2 / span 2;
 }
 
 .c {
-
+    grid-area: 2 / 1 / span 3 / span 1;
 }
 
 .d {
 
-
+    grid-area: 3 / 3 / span 1 / span 1;
 }
